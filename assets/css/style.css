@@ -36,6 +36,38 @@ nav .container form .input {
   margin-top: -2px;
 }
 
+.img-click {
+  position: relative;
+}
+
+.img-click img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-click .gray-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-click .gray-overlay i {
+  color: #e9e9e92d;
+}
+
+.img-click:hover .gray-overlay {
+  background-color: rgba(128, 128, 128, 0.164);
+}
+
+.img-click:hover .gray-overlay i {
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
 .nav-hover {
   width: 100%;
   background-color: #f3f3f3;
@@ -753,7 +785,7 @@ nav .container form .input {
 }
 
 .section-header img {
-  height: 380px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   -o-object-fit: cover;
@@ -812,7 +844,7 @@ nav .container form .input {
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img {
-  height: 550px;
+  height: 300px;
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -924,12 +956,16 @@ nav .container form .input {
   height: 120px;
 }
 
-.content-market .container .con-body .scope .row a .card h5 {
+.content-market .container .con-body .scope .row a .card .card-body {
+  background-color: #e6e6e6;
+}
+
+.content-market .container .con-body .scope .row a .card .card-body h5 {
   font-weight: bold;
   font-size: 16px;
 }
 
-.content-market .container .con-body .scope .row a .card p {
+.content-market .container .con-body .scope .row a .card .card-body p {
   font-size: 15px;
   font-weight: 400;
 }
@@ -1029,13 +1065,17 @@ nav .container form .input {
      object-position: center;
 }
 
-.content-product .container .con-body .scope .row a .card h5 {
+.content-product .container .con-body .scope .row a .card .card-body {
+  background-color: #e7e7e7;
+}
+
+.content-product .container .con-body .scope .row a .card .card-body h5 {
   font-weight: bold;
   font-size: 16px;
   color: #2e2e2e;
 }
 
-.content-product .container .con-body .scope .row a .card p {
+.content-product .container .con-body .scope .row a .card .card-body p {
   font-size: 14px;
   font-weight: 600;
 }
@@ -1077,13 +1117,17 @@ nav .container form .input {
      object-position: center;
 }
 
-.content-technology .container .con-body .scope .row .col-item a .card h5 {
+.content-technology .container .con-body .scope .row .col-item a .card .card-body {
+  background-color: #e7e7e7;
+}
+
+.content-technology .container .con-body .scope .row .col-item a .card .card-body h5 {
   font-weight: bold;
   font-size: 16px;
   color: #2e2e2e;
 }
 
-.content-technology .container .con-body .scope .row .col-item a .card p {
+.content-technology .container .con-body .scope .row .col-item a .card .card-body p {
   font-size: 14px;
   font-weight: 600;
 }
@@ -1286,13 +1330,17 @@ nav .container form .input {
      object-position: center;
 }
 
-.content-news .container .con-body .scope .row a .card h5 {
+.content-news .container .con-body .scope .row a .card .card-body {
+  background-color: #e6e6e6;
+}
+
+.content-news .container .con-body .scope .row a .card .card-body h5 {
   font-weight: bold;
   font-size: 16px;
   color: #2e2e2e;
 }
 
-.content-news .container .con-body .scope .row a .card p {
+.content-news .container .con-body .scope .row a .card .card-body p {
   font-size: 14px;
   font-weight: 600;
 }
@@ -1361,12 +1409,16 @@ nav .container form .input {
   cursor: pointer;
 }
 
+.section-header-world svg path:active {
+  fill: #919191;
+}
+
 .section-header-world svg .active-path {
   fill: #919191;
 }
 
 .content-worldwide .container .content .active-worldwide {
-  background-color: black;
+  background-color: black !important;
   color: #f0f0f0 !important;
 }
 
@@ -1391,6 +1443,7 @@ nav .container form .input {
   text-align: center;
   height: 50px;
   line-height: 50px;
+  background-color: #ebebeb;
 }
 
 .content-worldwide .container .content .col-network ul li a:hover {
@@ -1408,6 +1461,7 @@ nav .container form .input {
 
 .content-worldwide .container .content .col-continent ul li {
   margin-bottom: 4px;
+  background-color: #ebebeb;
   display: inline-block;
   color: #1f1f1f;
   font-size: 18px;
@@ -1434,6 +1488,7 @@ nav .container form .input {
 
 .content-worldwide .container .content .col-country ul li {
   margin-bottom: 4px;
+  background-color: #ebebeb;
   display: inline-block;
   color: #1f1f1f;
   font-size: 18px;

@@ -37,6 +37,35 @@ nav {
   position: relative;
   margin-top: -2px;
 }
+//clicked video
+.img-click {
+  position: relative;
+  img {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .gray-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    i {
+      color: #e9e9e92d;
+    }
+  }
+  &:hover {
+    .gray-overlay {
+      background-color: rgba(128, 128, 128, 0.164);
+
+      i {
+        color: #d4d4d4;
+        cursor: pointer;
+      }
+    }
+  }
+}
 // nav hover
 .nav-hover {
   width: 100%;
@@ -762,7 +791,7 @@ nav {
 // Header
 .section-header {
   img {
-    height: 380px;
+    height: 300px;
     width: 100%;
     background-size: cover;
     object-fit: cover;
@@ -834,7 +863,7 @@ nav {
   .carousel-inner {
     .carousel-item {
       img {
-        height: 550px;
+        height: 300px;
         background-size: cover;
         object-fit: cover;
         object-position: center;
@@ -944,13 +973,16 @@ nav {
               .card-img-top {
                 height: 120px;
               }
-              h5 {
-                font-weight: bold;
-                font-size: 16px;
-              }
-              p {
-                font-size: 15px;
-                font-weight: 400;
+              .card-body {
+                background-color: rgb(230, 230, 230);
+                h5 {
+                  font-weight: bold;
+                  font-size: 16px;
+                }
+                p {
+                  font-size: 15px;
+                  font-weight: 400;
+                }
               }
 
               &:hover {
@@ -1054,14 +1086,17 @@ nav {
                 object-fit: contain;
                 object-position: center;
               }
-              h5 {
-                font-weight: bold;
-                font-size: 16px;
-                color: #2e2e2e;
-              }
-              p {
-                font-size: 14px;
-                font-weight: 600;
+              .card-body {
+                background-color: rgb(231, 231, 231);
+                h5 {
+                  font-weight: bold;
+                  font-size: 16px;
+                  color: #2e2e2e;
+                }
+                p {
+                  font-size: 14px;
+                  font-weight: 600;
+                }
               }
 
               &:hover {
@@ -1099,14 +1134,17 @@ nav {
                   object-fit: contain;
                   object-position: center;
                 }
-                h5 {
-                  font-weight: bold;
-                  font-size: 16px;
-                  color: #2e2e2e;
-                }
-                p {
-                  font-size: 14px;
-                  font-weight: 600;
+                .card-body {
+                  background-color: rgb(231, 231, 231);
+                  h5 {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: #2e2e2e;
+                  }
+                  p {
+                    font-size: 14px;
+                    font-weight: 600;
+                  }
                 }
 
                 &:hover {
@@ -1331,14 +1369,17 @@ nav {
                 object-fit: contain;
                 object-position: center;
               }
-              h5 {
-                font-weight: bold;
-                font-size: 16px;
-                color: #2e2e2e;
-              }
-              p {
-                font-size: 14px;
-                font-weight: 600;
+              .card-body {
+                background-color: rgb(230, 230, 230);
+                h5 {
+                  font-weight: bold;
+                  font-size: 16px;
+                  color: #2e2e2e;
+                }
+                p {
+                  font-size: 14px;
+                  font-weight: 600;
+                }
               }
 
               &:hover {
@@ -1415,9 +1456,9 @@ nav {
       transition: fill 0.3s;
       cursor: pointer;
 
-      // &:hover {
-      //   fill: #919191;
-      // }
+      &:active {
+        fill: #919191;
+      }
     }
     .active-path {
       fill: #919191;
@@ -1429,7 +1470,7 @@ nav {
   .container {
     .content {
       .active-worldwide {
-        background-color: black;
+        background-color: black !important;
         color: #f0f0f0 !important;
       }
       .col-network {
@@ -1447,6 +1488,7 @@ nav {
               text-align: center;
               height: 50px;
               line-height: 50px;
+              background-color: rgb(235, 235, 235);
 
               &:hover {
                 background-color: black;
@@ -1462,7 +1504,7 @@ nav {
           margin-bottom: 0;
           li {
             margin-bottom: 4px;
-
+            background-color: rgb(235, 235, 235);
             display: inline-block;
             color: #1f1f1f;
             font-size: 18px;
@@ -1486,6 +1528,7 @@ nav {
           margin-bottom: 0;
           li {
             margin-bottom: 4px;
+            background-color: rgb(235, 235, 235);
             display: inline-block;
             color: #1f1f1f;
             font-size: 18px;

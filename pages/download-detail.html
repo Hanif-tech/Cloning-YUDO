@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <!-- Navbar Top-->
+    <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container py-3">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -27,19 +27,19 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About YUDO</a>
+              <a class="nav-link" href="pages/about.html" id="nav-about">About YUDO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" id="nav-market">Market</a>
+              <a class="nav-link" href="pages/markets.html" id="nav-market" tabindex="-1">Market</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" id="nav-product">Product</a>
+              <a class="nav-link" href="pages/product.html" id="nav-product" tabindex="-1">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" id="nav-technology">Technology</a>
+              <a class="nav-link" href="pages/technology.html" id="nav-technology" tabindex="-1">Technology</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active-nav" href="#" tabindex="-1" id="nav-download">Download</a>
+              <a class="nav-link active-nav" href="pages/download.html" id="nav-download" tabindex="-1">Download</a>
             </li>
           </ul>
           <form class="d-flex ms-auto">
@@ -49,16 +49,103 @@
           <div class="ms-3 dropdown">
             <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-earth-asia"></i> </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item d-flex justify-content-start" href="#">
+                  <div class="img me-3">
+                    <img src="assets/img/icon_country.png" alt="" class="img-fluid" />
+                  </div>
+                  Action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex justify-content-start" href="#">
+                  <div class="img me-3">
+                    <img src="assets/img/icon_country.png" alt="" class="img-fluid" />
+                  </div>
+                  Action
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
     <!-- nav hover -->
+    <div class="nav-hover d-none" id="nav-about">
+      <div class="container py-3 mt-3">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-hot">
+            <h5>Hot Runner System</h5>
+            <div class="row flex-row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="nav-hover d-none" id="nav-market">
       <div class="container py-3 mt-3">
+        <div class="row justify-content-center">
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+          <div class="col-md-2 item d-flex flex-column">
+            <div class="img">
+              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
+              <p>Notebook</p>
+            </div>
+          </div>
+        </div>
         <div class="row justify-content-center">
           <div class="col-md-2 item d-flex flex-column">
             <div class="img">
@@ -108,46 +195,116 @@
     <div class="nav-hover d-none" id="nav-product">
       <div class="container py-3 mt-3">
         <div class="row justify-content-center">
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
+          <div class="col-md-5 col-hot">
+            <h5>Hot Runner System</h5>
+            <div class="row flex-row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="list-unstyled">
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled">
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled">
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
+          <div class="col-md-3 col-hot">
+            <h5>Hot Runner System</h5>
+            <div class="row flex-row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
-            </div>
-          </div>
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
-            </div>
-          </div>
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
-            </div>
-          </div>
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
-            </div>
-          </div>
-          <div class="col-md-2 item d-flex flex-column">
-            <div class="img">
-              <img src="../assets/img/cover_nb.jpg" class="img-fluid" alt="" />
-              <p>Notebook</p>
+          <div class="col-md-3 col-hot">
+            <h5>Hot Runner System</h5>
+            <div class="row flex-row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                      <li>T-STACK SYSTEM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -252,7 +409,33 @@
 
     <main class="mt-5">
       <div class="section-header">
-        <img src="../assets/img/download-banner.jpg" alt="" />
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-pause="false" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/img/download-banner.jpg" class="d-block w-100 img-fluid" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/image-click-video.jpg" class="d-block w-100 img-fluid" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/img/img-set1.jpg" class="d-block w-100 img-fluid" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <img src="../assets/img/download-banner.jpg" alt="" /> -->
       </div>
       <div class="content-download-detail">
         <div class="container">
@@ -383,24 +566,64 @@
               </ul>
             </div>
             <div class="col-sm-3">
-              <p>Technology</p>
-              <ul>
-                <li>
-                  <p class="">company introduction</p>
-                </li>
-                <li>
-                  <p class="">company introduction</p>
-                </li>
-                <li>
-                  <p class="">company introduction</p>
-                </li>
-                <li>
-                  <p class="">company introduction</p>
-                </li>
-                <li>
-                  <p class="">company introduction</p>
-                </li>
-              </ul>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>Technology</p>
+                  <ul>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>Technology</p>
+                  <ul>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li>
+                      <p class="">company introduction</p>
+                    </li>
+                    <li class="icon">
+                      <img src="../assets/img/icon_footer1.jpg" class="img-fluid" alt="" />
+                      <p>ISO09310</p>
+                      <p>ISO09310</p>
+                    </li>
+                    <li class="icon">
+                      <img src="../assets/img/icon_footer1.jpg" class="img-fluid" alt="" />
+                      <p>ISO09310</p>
+                    </li>
+                    <li class="d-flex">
+                      <div class="sosmed">
+                        <img src="../assets/img/Youtube.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="sosmed">
+                        <img src="../assets/img/Youtube.png" class="img-fluid" alt="" />
+                      </div>
+                      <div class="sosmed">
+                        <img src="../assets/img/Youtube.png" class="img-fluid" alt="" />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -412,6 +635,35 @@
       </div>
     </footer>
 
+    <!-- Sidebar fixed -->
+    <div class="sidebar-side" id="sidebar-fixed">
+      <a href="">
+        <div class="icon-side-product p-2 d-flex justify-content-center" style="background-color: red">
+          <img src="../assets/img/icon_sidebar1.png" class="img-fluid" alt="" />
+          <div class="slide-content d-flex align-items-center p-3 fw-bold"><p>PRODUCT</p></div>
+        </div>
+      </a>
+      <a href="">
+        <div class="icon-side-product p-2 d-flex justify-content-center">
+          <div class="slide-content d-flex align-items-center p-3 px-4"><p>TINA AM</p></div>
+        </div>
+      </a>
+      <a href="">
+        <div class="icon-side-product p-2 d-flex justify-content-center">
+          <div class="slide-content d-flex align-items-center p-3 px-4"><p>TINA EP</p></div>
+        </div>
+      </a>
+      <a href="">
+        <div class="icon-side-product p-2 d-flex justify-content-center">
+          <div class="slide-content d-flex align-items-center p-3 px-4"><p>TINA GP</p></div>
+        </div>
+      </a>
+      <a href="">
+        <div class="icon-side-product p-2 d-flex justify-content-center py-4">
+          <div class="slide-content d-flex align-items-center p-3 py-4"><p>MARKET CATALOGUE</p></div>
+        </div>
+      </a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -456,6 +708,21 @@
         const target = e.target;
         console.log(target);
       }
+
+      //sidebar
+      const sidebar = document.getElementById("sidebar-fixed");
+      const sidebarContent = document.querySelectorAll(".slide-content");
+
+      sidebar.onmouseover = () => {
+        sidebarContent.forEach((sidebar) => {
+          sidebar.style.right = "40px";
+        });
+      };
+      sidebar.onmouseleave = () => {
+        sidebarContent.forEach((sidebar) => {
+          sidebar.style.right = "-150px";
+        });
+      };
     </script>
   </body>
 </html>
