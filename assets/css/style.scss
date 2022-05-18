@@ -490,7 +490,8 @@ nav {
 
 /* The Close Button */
 .close,
-.close2 {
+.close2,
+.close-modal {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -498,6 +499,7 @@ nav {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -949,12 +951,17 @@ nav {
 //executive page
 .content-executive {
   margin-bottom: 100px;
-  .container {
+  .container-fluid {
     background-color: white;
+    padding: 60px 40px;
     .content-title {
-      margin-bottom: 100px;
+      // margin-bottom: 100px;
+      padding: 0px 100px;
     }
+  }
+  .container {
     .con-body {
+      background-color: white;
       .scope {
         margin-top: 70px;
         .row {
@@ -1191,6 +1198,10 @@ nav {
       }
     }
   }
+}
+
+.fw-m {
+  font-weight: 600;
 }
 
 //detail technology

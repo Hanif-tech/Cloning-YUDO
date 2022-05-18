@@ -461,9 +461,22 @@
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <div class="img">
-                      <img src="../assets/img/automobile01.jpg" class="img-fluid" alt="" />
+                    <div class="img-click">
+                      <img src="../assets/img/automobile01.jpg" alt="img" id="click" />
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close-modal">&times;</span>
+                        <!-- Modal Content (The video) -->
+                        <iframe id="vid01" class="modal-content" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+                      </div>
+                      <div class="gray-overlay d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-circle-play fa-7x icon-playing"></i>
+                      </div>
                     </div>
+                    <!-- <div class="img">
+                      <img src="../assets/img/automobile01.jpg" class="img-fluid" alt="" />
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -488,6 +501,54 @@
                   <div class="col-12">
                     <div class="img">
                       <img src="../assets/img/automobile01.jpg" class="img-fluid" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desc mb-5 pb-3">
+              <div class="content-title">
+                <div class="row">
+                  <h2>YUDRIVE II</h2>
+                </div>
+              </div>
+              <div class="content-body">
+                <div class="row px-5 mt-5">
+                  <div class="col-md-6 col-left">
+                    <div class="row flex-column">
+                      <div class="col-12">
+                        <h3 class="fw-m">Advantages</h3>
+                        <ul type="square">
+                          <li>Up to 16 drops control.</li>
+                          <li>Independent control( without Tablet).</li>
+                          <li>"Manual" button for resin purging function.</li>
+                          <li>Quick colour change function.</li>
+                          <li>Be safer with combined operation with auto</li>
+                          <li>Independent WIFI Network to communicate</li>
+                        </ul>
+                      </div>
+                      <div class="col-12 mt-2">
+                        <h3 class="fw-m">Advantages</h3>
+                        <p>
+                          Stack Mold System is specially designed for mass production of home appliance, medical instruments, cosmetic packaging. It is cost-saving, highly efficient and quality assured. T-STACK mold system adopted multiple
+                          hot runner technologies to combine two sets of injection system into a comprehensive all-in-one piece, which can achieve automatic operation.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-right">
+                    <div class="img-click">
+                      <img src="../assets/img/yudodriveii_01.jpg" alt="img" id="click" />
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close-modal">&times;</span>
+                        <!-- Modal Content (The video) -->
+                        <iframe id="vid01" class="modal-content" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+                      </div>
+                      <div class="gray-overlay d-flex justify-content-center align-items-center">
+                        <i class="fa-regular fa-circle-play fa-7x icon-playing"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -833,7 +894,7 @@
 
     <script src="../assets/js/profile-data.js"></script>
     <script src="../assets/js/script-profile.js"></script>
-    <script src="../assets/js/sidebar-fixed.js"></script>
+    <script src="../assets/js/data.js"></script>
 
     <script>
       //========= Click Video Modal popup ===========
@@ -849,8 +910,22 @@
       //   clickModal(play, modal, span);
 
       //========= Click Video Modal popup ===========
+      //========= Click Video Modal popup ===========
+      // Get the modal
+      const modal1 = document.querySelectorAll("#myModal");
 
-      function clickModal(plays, modals, spans) {
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      //   const image = document.querySelectorAll("#click");
+      const play1 = document.querySelectorAll(".icon-playing");
+
+      // Get the <span> element that closes the modal
+      const span1 = document.querySelectorAll(".close-modal");
+      //   clickModal(play, modal, span);
+
+      clickModal(play1, span1);
+      //========= Click Video Modal popup ===========
+
+      function clickModall(plays, modals, spans) {
         plays.forEach((play) => {
           play.onclick = (e) => {
             const targetMenu = e.target;
@@ -870,7 +945,7 @@
           };
         });
       }
-      clickModal(play, modal, span);
+      clickModall(play, modal, span);
 
       //sidebar
       const sidebar = document.getElementById("sidebar-fixed");
@@ -883,7 +958,7 @@
       };
       sidebar.onmouseleave = () => {
         sidebarContent.forEach((sidebar) => {
-          sidebar.style.right = "-150px";
+          sidebar.style.right = "-180px";
         });
       };
     </script>

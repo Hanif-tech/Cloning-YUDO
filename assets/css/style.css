@@ -530,7 +530,8 @@ nav .container form .input {
 
 /* The Close Button */
 .close,
-.close2 {
+.close2,
+.close-modal {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -539,6 +540,7 @@ nav .container form .input {
   font-weight: bold;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -913,12 +915,17 @@ nav .container form .input {
   margin-bottom: 100px;
 }
 
-.content-executive .container {
+.content-executive .container-fluid {
   background-color: white;
+  padding: 60px 40px;
 }
 
-.content-executive .container .content-title {
-  margin-bottom: 100px;
+.content-executive .container-fluid .content-title {
+  padding: 0px 100px;
+}
+
+.content-executive .container .con-body {
+  background-color: white;
 }
 
 .content-executive .container .con-body .scope {
@@ -1160,6 +1167,10 @@ nav .container form .input {
 .content-technology .container .con-body .scope .row .col-item a .card:hover {
   -webkit-box-shadow: 0px 0px 14px rgba(116, 116, 116, 0.644);
           box-shadow: 0px 0px 14px rgba(116, 116, 116, 0.644);
+}
+
+.fw-m {
+  font-weight: 600;
 }
 
 .content-detail-tech .container .content .desc .content-title {
