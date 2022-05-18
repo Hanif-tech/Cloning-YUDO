@@ -642,6 +642,22 @@ nav .container form .input {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1024px) {
+  .timeline-line-now .line .line-span {
+    height: 360% !important;
+    border-left: 3px solid red;
+    margin-left: 11px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .timeline-line-now .line .line-span {
+    height: 155% !important;
+    border-left: 3px solid red;
+    margin-left: 11px;
+  }
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 970px) {
   #section-header #carouselExampleControls {
@@ -652,6 +668,11 @@ nav .container form .input {
   }
   #section-header #carouselExampleControls .carousel-inner .carousel-item {
     height: 190px;
+  }
+  .timeline-line-now .line .line-span {
+    height: 155% !important;
+    border-left: 3px solid red;
+    margin-left: 11px;
   }
   #Automobile-injection .container .row .img img {
     height: 330px;
@@ -1593,6 +1614,57 @@ nav .container form .input {
   color: red;
 }
 
+.timeline {
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+
+.timeline .content-title .title {
+  padding: 18px 20px;
+  border-left: 20px solid red;
+  border-right: 20px solid red;
+}
+
+.timeline .content-title .title .title-p {
+  margin: 0px !important;
+  font-weight: 700;
+}
+
+.timeline .timeline-line-now .year .year-content .body-content .text .body p {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.timeline .timeline-line-now .line .dot {
+  display: block;
+  width: 25px;
+  cursor: pointer;
+}
+
+.timeline .timeline-line-now .line .line-span {
+  display: block;
+  height: 375%;
+  border-left: 3px solid red;
+  margin-left: 11px;
+}
+
+.timeline .timeline-line-now .text {
+  padding-bottom: 20px;
+}
+
+.timeline .timeline-line-now .date {
+  padding-top: 10px;
+}
+
+.timeline .timeline-line-now .date h3 {
+  margin: 0;
+}
+
+.timeline .timeline-line-now .body p {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 528px) {
   #section-header #carouselExampleControls {
     height: 210px;
@@ -1602,6 +1674,11 @@ nav .container form .input {
   }
   #section-header #carouselExampleControls .carousel-inner .carousel-item {
     height: 210px;
+  }
+  .timeline-line-now .line .line-span {
+    height: 137% !important;
+    border-left: 3px solid red;
+    margin-left: 11px;
   }
   #product-series ul {
     padding: 0;
@@ -1641,6 +1718,14 @@ nav .container form .input {
   }
   .owl-nav .owl-next {
     margin-left: 80%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .timeline-line-now .line .line-span {
+    height: 145% !important;
+    border-left: 3px solid red;
+    margin-left: 11px;
   }
 }
 /*# sourceMappingURL=style.css.map */
