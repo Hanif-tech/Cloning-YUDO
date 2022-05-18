@@ -791,7 +791,7 @@ nav {
 // Header
 .section-header {
   img {
-    height: 300px;
+    height: 220px;
     width: 100%;
     background-size: cover;
     object-fit: cover;
@@ -863,7 +863,7 @@ nav {
   .carousel-inner {
     .carousel-item {
       img {
-        height: 300px;
+        height: 220px;
         background-size: cover;
         object-fit: cover;
         object-position: center;
@@ -917,6 +917,7 @@ nav {
 .content-executive {
   margin-bottom: 100px;
   .container {
+    background-color: white;
     .content-title {
       margin-bottom: 100px;
     }
@@ -1298,10 +1299,13 @@ nav {
 .content-news {
   margin-bottom: 100px;
   .container {
+    background-color: rgb(255, 255, 255);
     .con-body {
       .nav-product {
         margin-top: 100px;
+        padding: 20px 10px;
         .row {
+          // margin-top: 40px;
           .nav-menu-product {
             padding: 0;
             margin: 0;
@@ -1312,7 +1316,7 @@ nav {
                 color: #747474;
                 font-weight: 700;
                 font-size: 18px;
-                padding: 18px 50px;
+                padding: 10px 50px;
                 &:hover {
                   color: red;
                   border-top: 2px solid red;
@@ -1348,7 +1352,8 @@ nav {
     }
     .con-body {
       .scope {
-        margin-top: 40px;
+        margin-top: 10px;
+        padding: 20px 5px;
         .row {
           .col-item {
             margin-top: 30px;
@@ -1396,8 +1401,13 @@ nav {
 // inquiry
 //detail technology
 .content-inquiry {
+  margin-bottom: 100px;
+  margin-top: 80px;
   .container {
+    background-color: white;
     .content {
+      margin: 0;
+      padding: 0;
       .agreement {
         h5 {
           margin-top: 40px;
